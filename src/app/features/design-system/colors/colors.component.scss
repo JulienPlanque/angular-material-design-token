@@ -1,0 +1,83 @@
+.group {
+  display: flex;
+  gap: 2rem;
+}
+.color-box-base {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mat-sys-outline-variant);
+}
+
+.color-box-primary {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary);
+}
+.color-box-primary-container {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-primary-container);
+  color: var(--mat-sys-on-primary-container);
+}
+.color-box-secondary {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-secondary);
+  color: var(--mat-sys-on-secondary);
+}
+.color-box-secondary-container {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-secondary-container);
+  color: var(--mat-sys-on-secondary-container);
+}
+.color-box-tertiary {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-tertiary);
+  color: var(--mat-sys-on-tertiary);
+}
+.color-box-tertiary-container {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-tertiary-container);
+  color: var(--mat-sys-on-tertiary-container);
+}
+.color-box-surface {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+}
+.color-box-surface-container {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-surface-container);
+  color: var(--mat-sys-on-surface);
+}
+.color-box-error {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-error);
+  color: var(--mat-sys-on-error);
+}
+
+.color-box-error-container {
+  @extend .color-box-base;
+  background-color: var(--mat-sys-error-container);
+  color: var(--mat-sys-on-error-container);
+}
+
+// ----- DIVIDER -----
+.divider {
+  height: 10px;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.divider-outline {
+  @extend .divider;
+  background-color: var(--mat-sys-outline);
+}
+
+.divider-outline-variant {
+  @extend .divider;
+  background-color: var(--mat-sys-outline-variant);
+}

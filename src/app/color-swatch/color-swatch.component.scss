@@ -1,0 +1,22 @@
+:host {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid var(--mat-sys-outline-variant);
+  font-family: monospace;
+  font-size: 12px;
+  padding: 0.5rem;
+}
+.color-info {
+  display: flex;
+  // justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.color-code {
+  font-weight: bold;
+}

@@ -1,0 +1,33 @@
+@use '@angular/material' as mat;
+
+$primary-palette: (
+  0: #000000,
+  10: #001F3F,
+  20: #003366,
+  30: #004C99,
+  40: #0066CC,
+  50: #3385D6,
+  60: #66A3E0,
+  70: #99C2EB,
+  80: #CCE0F5,
+  90: #E6F0FA,
+  95: #F2F8FD,
+  99: #FCFEFF,
+  100: #FFFFFF
+);
+
+$secondary-palette: (
+  0: #000000,
+  10: #261E1C,
+  20: #4D3D39,
+  30: #735B56,
+  40: #997973,
+  50: #B2978F,
+  60: #CCB6AB,
+  70: #E6D4C7,
+  80: #F2E6E0,
+  90: #FAF3F1,
+  95: #FCF8F7,
+  99: #FEFEFE,
+  100: #FFFFFF
+);

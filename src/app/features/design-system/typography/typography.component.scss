@@ -1,0 +1,45 @@
+.typography-section {
+  font-family: sans-serif;
+  margin-top: 2rem;
+}
+
+.typography-table {
+  border-collapse: collapse;
+}
+
+.style-info-row td {
+  padding: 0.75rem 0.5rem;
+}
+
+.type-name {
+  font-weight: 500;
+  color: var(--mat-sys-on-surface);
+  border-top: 3px solid var(--mat-sys-outline-variant);
+  border-left: 3px solid var(--mat-sys-outline-variant);
+  border-right: 2px solid var(--mat-sys-outline-variant);
+  border-bottom: 2px solid var(--mat-sys-outline-variant);
+}
+
+.type-tag {
+  font-family: monospace;
+  font-size: 13px;
+  color: var(--mat-sys-on-surface-variant);
+  text-align: left;
+  border-top: 3px solid var(--mat-sys-outline-variant);
+  border-right: 3px solid var(--mat-sys-outline-variant);
+  border-left: 2px solid var(--mat-sys-outline-variant);
+  border-bottom: 2px solid var(--mat-sys-outline-variant);
+}
+.style-example-row {
+  border-left: 3px solid var(--mat-sys-outline-variant);
+  border-right: 3px solid var(--mat-sys-outline-variant);
+  border-bottom: 3px solid var(--mat-sys-outline-variant);
+}
+.style-example-row td {
+  padding: 1rem 0.5rem 2rem 0.5rem;
+}
+
+.type-example {
+  margin: 0;
+  color: var(--mat-sys-on-surface);
+}

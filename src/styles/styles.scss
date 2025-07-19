@@ -1,0 +1,45 @@
+@use '@angular/material' as mat;
+@use 'theme-colors' as colors;
+@use 'typography' as typo;
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        primary: colors.$primary-palette,
+        tertiary: colors.$tertiary-palette,
+      ),
+      typography: (
+        plain-family: 'Roboto',
+        brand-family: 'Open Sans',
+        bold-weight: 900,
+        medium-weight: 500,
+        regular-weight: 300,
+      ),
+      density: (
+        scale: 0,
+      ),
+    )
+  );
+  @media (prefers-contrast: more) {
+    @include colors.high-contrast-overrides(color-scheme);
+  }
+
+  @include typo.my-typography-hierarchy;
+}
+
+body {
+  background-color: var(--mat-sys-color-surface);
+  color: var(--mat-sys-color-on-surface);
+}
+.tooltip-personnalise {
+  // Permet d'afficher le texte sur plusieurs lignes
+  white-space: pre-line;
+
+  // Personnalisation du style
+  background-color: var(--mat-sys-color-tertiary);
+  color: var(--mat-sys-color-on-tertiary);
+  font-size: 14px;
+  max-width: 300px; // Augmente la largeur maximale
+  text-align: left;
+}

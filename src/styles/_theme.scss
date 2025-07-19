@@ -1,0 +1,16 @@
+@use '@angular/material' as mat;
+@use './tokens' as tokens;
+@use './typography' as typography;
+
+$my-theme: mat.define-theme((
+  color: (
+    primary: tokens.$primary-palette,
+    secondary: tokens.$secondary-palette,
+  ),
+  typography: typography.$custom-typography,
+  density: 0
+));
+
+html {
+  @include mat.all-component-themes($my-theme);
+}
