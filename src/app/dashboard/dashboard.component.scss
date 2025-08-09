@@ -1,0 +1,9 @@
+.full-width-table {
+  width: 100%;
+}
+tr {
+  &:hover {
+    // Utilise l'opacité standard pour les états hover
+    opacity: var(--mat-hover-state-layer-opacity, 0.5);
+  }
+}

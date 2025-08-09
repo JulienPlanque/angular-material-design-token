@@ -1,7 +1,7 @@
 import { Component, effect, inject, Signal, viewChildren } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterModule } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { ColorSwatchComponent } from './color-swatch/color-swatch.component';
 import { ThemeService } from './core/services/theme.service';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,8 +14,9 @@ import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
-    RouterModule,
+    RouterOutlet,
     MatSlideToggleModule,
     MatToolbarModule,
     MatIconModule,

@@ -1,0 +1,15 @@
+@use '@angular/material' as mat;
+
+.dashboard-container {
+  height: 100%; // Ou la hauteur que vous souhaitez
+  @include mat.sidenav-overrides(
+    (
+      container-width: 200px,
+      container-background-color: var(--mat-sys-surface-container),
+    )
+  );
+}
+
+main {
+  padding: 20px;
+}

@@ -33,6 +33,15 @@
       </mat-menu>
     </div>
   } @else {
+    <mat-slide-toggle
+      [checked]="themeService.theme() === 'dark'"
+      (change)="themeService.toggleTheme()"
+      [aria-label]="
+        themeService.theme() === 'dark' ? 'Désactiver le mode sombre' : 'Activer le mode sombre'
+      "
+    >
+      {{ themeService.theme() === 'dark' ? 'Mode Sombre' : 'Mode Clair' }}
+    </mat-slide-toggle>
     <div class="desktop-right-section">
       <nav>
         <a mat-button routerLink="/page1">Page 1</a>
@@ -48,3 +57,4 @@
     </div>
   }
 </mat-toolbar>
+<router-outlet></router-outlet>
