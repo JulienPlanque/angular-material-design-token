@@ -1,45 +1,38 @@
-.typography-section {
-  font-family: sans-serif;
-  margin-top: 2rem;
+:host {
+  display: block;
+  box-sizing: border-box;
+  padding: var(--app-page-padding, 1.5rem);
 }
 
-.typography-table {
-  border-collapse: collapse;
+.ds-typography > h2 {
+  margin: 0 0 var(--app-gap-m, 1rem);
 }
 
-.style-info-row td {
-  padding: 0.75rem 0.5rem;
+.sample-input {
+  width: min(40rem, 100%);
+  margin-bottom: var(--app-gap-m, 1rem);
 }
 
-.type-name {
-  font-weight: 500;
-  color: var(--mat-sys-on-surface);
-  border-top: 3px solid var(--mat-sys-outline-variant);
-  border-left: 3px solid var(--mat-sys-outline-variant);
-  border-right: 2px solid var(--mat-sys-outline-variant);
-  border-bottom: 2px solid var(--mat-sys-outline-variant);
+.specimen-grid {
+  display: grid;
+  gap: var(--app-gap-m, 1rem);
+  grid-template-columns: 1fr;
+}
+@media (min-width: var(--app-bp-md, 60rem)) {
+  .specimen-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.type-tag {
-  font-family: monospace;
-  font-size: 13px;
-  color: var(--mat-sys-on-surface-variant);
-  text-align: left;
-  border-top: 3px solid var(--mat-sys-outline-variant);
-  border-right: 3px solid var(--mat-sys-outline-variant);
-  border-left: 2px solid var(--mat-sys-outline-variant);
-  border-bottom: 2px solid var(--mat-sys-outline-variant);
+.specimen mat-card-header {
+  align-items: center;
+  gap: 0.5rem;
 }
-.style-example-row {
-  border-left: 3px solid var(--mat-sys-outline-variant);
-  border-right: 3px solid var(--mat-sys-outline-variant);
-  border-bottom: 3px solid var(--mat-sys-outline-variant);
-}
-.style-example-row td {
-  padding: 1rem 0.5rem 2rem 0.5rem;
+.copy-btn {
+  margin-left: auto;
 }
 
 .type-example {
-  margin: 0;
-  color: var(--mat-sys-on-surface);
+  margin: 0.5rem 0 0 0;
+  overflow-wrap: anywhere;
 }
